@@ -18,6 +18,12 @@ body {
     overflow-x: hidden;
 }
 
+.header-spacer {
+  height: 82px; /* or whatever your header height is */
+  width: 100%;
+}
+
+
 /* Header Styles - Consistent Across All Pages */
 .header {
     position: fixed;
@@ -89,7 +95,7 @@ body {
 
 /* Main Content */
 .main-content {
-    margin-top: 100px;
+    
     min-height: calc(100vh - 100px);
 }
 
@@ -265,7 +271,7 @@ select:focus, input:focus, textarea:focus {
     font-weight: 700;
     color: #333;
     margin-bottom: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .section-subtitle {
@@ -369,6 +375,77 @@ select:focus, input:focus, textarea:focus {
 .gap-2 { gap: 1rem; }
 .gap-3 { gap: 1.5rem; }
 .gap-4 { gap: 2rem; }
+
+/* old ahh Footer */
+/* footer {
+    background-color: #4e693f;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; 
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .nav-links a:hover {
+        padding-left: 0;
+    }
+
+    .subscribe-btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .footer-main {
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Demo body styles - remove padding for production */
+.demo-content {
+    background: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.demo-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6B7B5A;
+}
+
+.demo-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

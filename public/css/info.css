@@ -1,4 +1,5 @@
 /* info.css */
+
 * {
   font-family: 'Poppins', sans-serif !important;
 }
@@ -202,7 +203,7 @@ h1 {
 .extra-sections div {
     background-color: #89ab75;  /* White background for sections */
     color: #2d3d25;
-    padding: 1px;           /* Add padding inside the sections */
+    padding: 30px;           /* Add padding inside the sections */
     margin: 20px 0;          /* Margin between sections */
     border-radius: 10px;     /* Optional: rounded corners */
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */

@@ -5,9 +5,13 @@
 }
 
 body {
-    padding-top: 20px;
+    
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     min-height: 100vh;
+}
+
+.main-content{
+    margin-top: 3rem;
 }
 
 /* Admin Hero Section */
@@ -16,7 +20,7 @@ body {
     background: linear-gradient(135deg, #6B7B5A 0%, #8B9A7A 100%);
     border-radius: 20px;
     padding: 3rem;
-    margin-bottom: 3rem;
+    
     color: white;
     position: relative;
     overflow: hidden;

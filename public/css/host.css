@@ -23,7 +23,9 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 100px;
+    
+    padding: 3rem;
+    padding-top: 7rem;
     flex: 1;
   display: flex;
   flex-direction: column;

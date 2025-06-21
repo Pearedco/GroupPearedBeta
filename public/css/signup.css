@@ -107,7 +107,7 @@ body::before {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin-top: 7ch; /* Account for fixed header */
+    
     position: relative;
     z-index: 2;
 }

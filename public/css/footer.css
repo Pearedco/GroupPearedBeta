@@ -1,9 +1,276 @@
-/* Footer */
-footer {
+/* old ahh Footer */
+/* footer {
     background-color: #4e693f;
     font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto; /* push footer to bottom if page is short */
+    margin-top: auto; 
+} */
+
+/* footer.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Poppins to body and specific elements, not everything */
+body, p, h1, h2, h3, h4, h5, h6, span, a, button, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure Font Awesome icons use their proper font */
+.fa-solid, .fa-regular, .fa-light, .fa-thin, .fa-duotone, .fa-brands {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands" !important;
+}
+body {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #6B7B5A 0%, #5a6b49 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 4rem; 
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="80" cy="40" r="0.5" fill="rgba(255,255,255,0.05)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.5;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.contact-item i {
+    font-size: 18px;
+    color: #6B7B5A; /* Green icon color */
+    background: white; /* White circle background */
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 0.3s ease; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.contact-item i:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.contact-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: inherit; /* keeps the link text white like before */
+  text-decoration: none; /* remove underline */
+}
+
+.contact-item a:hover {
+  text-decoration: underline; /* optional hover effect */
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0;
+}
+
+.nav-links a:hover {
+    color: #CDE0B3;
+    /* padding-left: 0.5rem; */
+}
+
+.get-involved {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get-involved p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.mailing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-input {
+    padding: 0.8rem 1rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 25px !important;
+    font-size: 1rem !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.email-input:focus {
+    outline: none;
+    /* background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important; */
+     background: rgba(255, 255, 255, 0.25) !important; /* ⬅️ increased opacity from 0.15 to 0.25 */
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.4); /* ⬅️ optional subtle glow effect */
+
+}
+
+.subscribe-btn {
+    padding: 0.8rem 2rem;
+    background: white;
+    color: #6B7B5A;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.subscribe-btn:hover {
+    background: #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .nav-links a:hover {
+        padding-left: 0;
+    }
+
+    .subscribe-btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .footer-main {
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Demo body styles - remove padding for production */
+.demo-content {
+    background: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.demo-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #6B7B5A;
+}
+
+.demo-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
 }

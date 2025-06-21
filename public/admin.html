@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" href="assets/PearedLogoBig.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
      <script src="js/admin.js" defer></script>
+     <script src="js/loadFooter.js"></script>
 
 </head>
 <body>
@@ -30,16 +33,22 @@
         </div>
     </header>
 
+    <div class="header-spacer"></div>
+
 
   <!-- Main Content -->
   <div class="main-content">
     <div class="container">
       <!-- Admin Hero Section -->
       <div class="admin-hero">
+
         <div class="admin-hero-content">
+
           <h1 class="admin-title">Admin Portal</h1>
           <p class="admin-subtitle">Manage volunteer events and coordinate community impact across your platform</p>
+
           <div class="filter-container">
+
             <label for="statusFilter">Filter Events:</label>
             <select id="statusFilter">
               <option value="all">All Events</option>
@@ -47,9 +56,13 @@
               <option value="approved">Approved</option>
               <option value="denied">Denied</option>
             </select>
+
           </div>
+
         </div>
+
       </div>
+
 
 
       <!-- Events -->
@@ -74,7 +87,7 @@
     </div>
   </div>
 
-
+<div id="footer-container"></div>
  
 </body>
 </html>

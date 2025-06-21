@@ -30,11 +30,11 @@ body::before {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 100px; /* Account for fixed header */
+    align-items: flex-start; /* Changed from center to flex-start */
+    padding: 4rem;
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 /* Login Form Card - FIXED WIDTH NO EXPANSION */
@@ -49,6 +49,7 @@ body::before {
     position: relative;
     overflow: hidden;
     box-sizing: border-box; /* Include padding in width */
+     margin-top: 0; /* ENSURE NO TOP MARGIN */
 }
 
 /* Subtle gradient overlay for the form */
